@@ -1,35 +1,26 @@
 # ICETask3
+**Business Requirements Document**
 
-Project Description:
-
-**Project Name:** Parentheses Validator
+**Project Name:** Java Programming Tasks
 
 **Project Overview:**
-The Parentheses Validator project aims to develop a Java function, `isValid`, that verifies the correctness of a sequence of parentheses in a given string. The function will analyze the input string to determine if the sequence of parentheses is well-formed, ensuring that for every open parenthesis, there is a corresponding closing parenthesis.
+The Java Programming Tasks project aims to develop three distinct functions in Java to address specific computational requirements. These functions are intended to be modular, efficient, and well-documented to ensure usability and maintainability.
 
 **Project Objectives:**
-- Develop a Java function `isValid(s)` using both the `String` and `StringBuilder` classes.
-- Validate the input string `s` to ensure it contains a sequence of parentheses ('(', ')', '{', '}', '[', ']') only.
-- Determine if the input string is valid, i.e., every open parenthesis has a corresponding closing parenthesis and the parentheses are well-formed.
-- Implement the function without utilizing the Stack data structure.
+1. Develop a function `isValid(s)` to validate the correctness of a sequence of parentheses in a given string.
+2. Implement an infinite generator function `odd_squares_sum` that yields the sum of squares of odd numbers up to a specified limit.
+3. Create a function `greatest_common_divisor` to determine the greatest common divisor of two input numbers.
+
+**Project Scope:**
+- The project will focus on implementing the specified functions using Java programming language.
+- The functions should adhere to the provided requirements and constraints, such as not using the Stack data structure for `isValid(s)`.
 
 **Project Deliverables:**
-- Java function `isValid(s)` that returns a boolean value indicating whether the input string `s` is valid or not.
-- Documentation detailing the approach used to implement the function, including any relevant references or resources consulted during development.
-- Test cases to validate the correctness of the function, including both valid and invalid input strings.
-
-**Project Tasks:**
-1. Develop the `isValid(s)` function to analyze the input string and determine its validity.
-2. Test the function with various input strings to ensure it correctly identifies valid and invalid sequences of parentheses.
-3. Document the implementation details, including the approach taken and any challenges encountered during development.
-4. Prepare test cases based on the provided requirements to validate the functionality of the `isValid(s)` function.
-
-**Resources:**
-- Codecademy Java Documentation on StringBuilder: [StringBuilder Documentation](https://www.codecademy.com/resources/docs/java/stringbuilder)
-  
-**Project Timeline:**
-- Start Date: [Insert Start Date]
-- End Date: [Insert End Date]
+1. Java function `isValid(s)` that determines the validity of a sequence of parentheses in a string.
+2. Infinite generator function `odd_squares_sum` that yields the sum of squares of odd numbers.
+3. Java function `greatest_common_divisor` to calculate the greatest common divisor of two numbers.
+4. Documentation detailing the usage, inputs, outputs, and constraints of each function.
+5. Test cases to validate the correctness and robustness of the implemented functions.
 
 **Project Stakeholders:**
 - Project Manager: [Insert Name]
@@ -37,13 +28,53 @@ The Parentheses Validator project aims to develop a Java function, `isValid`, th
 - Quality Assurance: [Insert Name]
 - Stakeholders: [Insert Names]
 
-**Project Risks:**
-- Inaccurate validation logic leading to incorrect results.
-- Inefficient implementation affecting performance.
-- Lack of understanding of the provided requirements leading to misinterpretation.
-  
-**Project Dependencies:**
-- Availability of required development environments (e.g., Eclipse IDE, Git Bash).
-- Access to relevant documentation and resources for Java programming and StringBuilder usage.
+**Functional Requirements:**
 
-This project aims to provide a robust and efficient solution for validating sequences of parentheses in Java without utilizing the Stack data structure, ensuring the correctness and reliability of the `isValid(s)` function.
+**Function: isValid(s)**
+- Description: This function validates the correctness of a sequence of parentheses in a given string.
+- Inputs: A string `s` containing a sequence of parentheses ('(', ')', '{', '}', '[', ']').
+- Outputs: Boolean value indicating whether the input string `s` is valid or not.
+- Constraints: The function should not use the Stack data structure.
+- Test Cases:
+  1. Input: “{}{)}” | Expected Output: False (Invalid)
+  2. Input: “” | Expected Output: False (Invalid)
+  3. Input: “{[}]” | Expected Output: False (Invalid)
+  4. Input: “()” | Expected Output: True (Valid)
+  5. Input: “({[]})” | Expected Output: True (Valid)
+
+**Function: odd_squares_sum**
+- Description: An infinite generator function that yields the sum of squares of odd numbers up to a specified limit.
+- Inputs: None (Limit may be implicitly defined).
+- Outputs: Integer value representing the sum of squares of odd numbers.
+- Constraints: The function should be capable of generating an infinite sequence.
+  
+**Function: greatest_common_divisor**
+- Description: This function calculates the greatest common divisor of two input numbers.
+- Inputs: Two integer values `a` and `b`.
+- Outputs: Integer value representing the greatest common divisor of `a` and `b`.
+- Constraints: The input numbers `a` and `b` must be positive integers.
+
+**Non-Functional Requirements:**
+- The functions should be well-documented with clear explanations of their inputs, outputs, and behavior.
+- Code readability and efficiency are important considerations for maintainability and performance.
+- The project should adhere to coding standards and best practices for Java programming.
+
+**Acceptance Criteria:**
+- All functions should pass the provided test cases and any additional test cases identified during development.
+- Documentation should be comprehensive and accessible to both technical and non-technical stakeholders.
+- The project should be delivered within the specified timeline with no critical defects.
+
+**Project Timeline:**
+- Start Date: [Insert Start Date]
+- End Date: [Insert End Date]
+
+**Project Risks:**
+- Inaccurate implementation of function logic leading to incorrect results.
+- Insufficient documentation affecting usability and understanding.
+- Potential performance issues with the infinite generator function.
+
+**Project Dependencies:**
+- Availability of required development environments (e.g., Java IDE).
+- Access to relevant documentation and resources for Java programming.
+
+This Business Requirements Document outlines the objectives, scope, deliverables, stakeholders, requirements, and risks associated with the Java Programming Tasks project. It serves as a guiding document for project planning, execution, and evaluation.
